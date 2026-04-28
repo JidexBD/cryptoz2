@@ -1,0 +1,31 @@
+/* variables for reuseability */
+
+/* fonts */
+@font-face {
+  font-family: "Yukita Sans", sans-serif;
+  src: url("/assets/fonts/YukitaSans-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /* color */
+  --tc: #626262;
+  --hc: #050e2c;
+  --l: #e8fafe;
+  --lb: #d0dbff;
+  --db: #091951;
+  --bc: #2752e7;
+  --y: #f3de95;
+  --p: #f395d9;
+  --w: #ffffff;
+  --wbt: #2c3131;
+
+  /* typograpgy */
+
+  /* font-family */
+  --ff1: "Inter";
+  --ff2: "Yukita Sans", sans-serif;
+
+  /* backgeoud colors */
+}

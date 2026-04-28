@@ -1,0 +1,154 @@
+/* Mobile first  */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--w);
+  align-items: center;
+  padding: 2rem;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  letter-spacing: 0px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.logo:hover,
+.logo:active {
+  transform: scale(1.08);
+}
+
+.logo span {
+  color: var(--bc);
+}
+
+/* web links */
+.nav-items {
+  display: none;
+}
+
+/* buttons */
+
+.buttons {
+  display: none;
+}
+
+.mobile-button {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* side bar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 75%;
+  max-width: 320px;
+  height: 100vh;
+  background: var(--bc);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-sidebar li:active {
+  padding: 1rem 8rem;
+  background-color: rgba(20, 21, 104, 0.322);
+  border: 1px solid;
+  border-radius: 8px;
+  color: var(--w);
+}
+
+.mobile-sidebar .nav-items li a {
+  color: var(--w);
+}
+
+.pry-btn,
+.outline-btn {
+  padding: 1rem 2rem;
+}
+
+/* web links */
+.mobile-sidebar .nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* buttons */
+.mobile-sidebar .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-sidebar.active {
+  right: 0;
+}
+
+.close-sidebar {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--w);
+}
+
+/* desktop views */
+@media (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--w);
+    padding: 1rem;
+    gap: 2rem;
+
+    font-size: 1.6rem;
+  }
+
+  .navlogo {
+    margin-left: 1rem;
+  }
+
+  /* nav items */
+  .nav-items li a {
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+  .nav-items li a:hover {
+    color: blue;
+    transform: scale(1.05);
+  }
+  .nav-items,
+  .nav-buttons {
+    display: flex;
+    gap: 2rem;
+    font-family: var(--ff1);
+    font-size: 1.6rem;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 2rem;
+    visibility: visible;
+    font-size: var(--fs1);
+    margin-left: 2rem;
+  }
+
+  .mobile-button,
+  .mobile-sidebar {
+    display: none;
+  }
+}

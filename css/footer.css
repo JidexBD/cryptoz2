@@ -1,0 +1,148 @@
+footer {
+  padding: 2rem 1rem;
+}
+
+.foot-container {
+  padding: 2rem 2rem;
+  background-color: var(--bc);
+  color: var(--w);
+  border-radius: 10px;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.col {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.col h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-family: var(--ff2);
+}
+
+.col li {
+  font-size: 1.3rem;
+  font-family: var(--ff1);
+}
+
+hr {
+  color: var(--w);
+  margin-bottom: 2rem;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#bottom h2 {
+  font-size: 1.4em;
+  text-align: center;
+  line-height: 130%;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  letter-spacing: 0px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-size: 1.6rem;
+}
+
+.logo:hover,
+.logo:active {
+  transform: scale(1.08);
+}
+
+small {
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  .foot-container {
+    padding: 2rem 1rem;
+    background-color: var(--bc);
+    color: var(--w);
+    border-radius: 10px;
+  }
+  #top {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  footer {
+    padding: 1rem 2rem;
+    margin: 2rem;
+  }
+
+  .foot-container {
+    padding: 2rem 4rem;
+    background-color: var(--bc);
+    color: var(--w);
+    border-radius: 20px;
+  }
+  #top {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    gap: 2rem;
+  }
+
+  .left {
+    display: flex;
+    justify-content: space-between;
+    gap: 18rem;
+  }
+  .right {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+
+  .col h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: var(--ff2);
+  }
+
+  .col li {
+    font-size: 1.7rem;
+    font-family: var(--ff1);
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+}
+
+/* 1800 */
+@media (min-width: 1800px) {
+  .left,
+  .right {
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+  }
+}

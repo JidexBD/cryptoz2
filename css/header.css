@@ -4,7 +4,7 @@ header {
     rgba(39, 82, 231, 1),
     rgba(11, 34, 113, 1)
   );
-  min-height: 100vh;
+  min-height: 80vh;
   position: relative;
   color: var(--w);
 }

@@ -30,9 +30,63 @@
 
 .hero-input input {
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   border: none;
   border-radius: 8px;
+  padding: 1rem;
+}
+
+.hero-input .hero-btn {
+  height: 5rem;
+  font-size: 1.8rem;
+}
+
+/* tab */
+@media (min-width: 768px) {
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  .left h1 {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 125%;
+    letter-spacing: -3.6px;
+    max-width: 390px;
+  }
+
+  .left p {
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 140%;
+  }
+
+  .hero-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-input input {
+    width: 100%;
+    height: 5rem;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .hero-input .hero-btn {
+    height: 5rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+}
+
+/* 1800 */
+@media (min-width: 1800px) {
 }
 
 /* right */

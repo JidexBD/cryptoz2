@@ -110,12 +110,12 @@ small {
     gap: 2rem;
   }
 
-  .left {
+  .f-left {
     display: flex;
     justify-content: space-between;
     gap: 18rem;
   }
-  .right {
+  .f-right {
     display: flex;
     justify-content: space-between;
     gap: 8rem;
@@ -139,8 +139,8 @@ small {
 
 /* 1800 */
 @media (min-width: 1800px) {
-  .left,
-  .right {
+  .f-left,
+  .f-right {
     display: flex;
     justify-content: space-between;
     gap: 20rem;

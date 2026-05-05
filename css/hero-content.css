@@ -191,6 +191,10 @@ select:focus {
   color: white;
 }
 
+/* tab */
+@media (min-width: 768px) {
+}
+
 /* 1024 */
 @media (min-width: 1280px) {
   .currency-container {

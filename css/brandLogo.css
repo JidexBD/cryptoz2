@@ -1,0 +1,47 @@
+.brand-logos {
+  padding: 3rem;
+  background-color: var(--w);
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  animation: brandAnimation 5s infinite;
+}
+
+.brand-grid img {
+  align-self: center;
+  width: 200px;
+  transition: 0.5s ease-in-out;
+}
+
+.brand-grid img:hover,
+.brand-grid img:active {
+  transform: scale(1.06);
+}
+
+/* tab */
+@media (min-width: 768px) {
+  .brand-grid img {
+    width: 180px;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  .brand-logos {
+    padding: 5rem 5rem;
+    background-color: var(--w);
+  }
+
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+  }
+}

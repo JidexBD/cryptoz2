@@ -16,8 +16,53 @@ header {
   z-index: 0;
 }
 
-/* .hd1 {
+.hd1 {
+  top: 8rem;
+  left: -1px;
+  width: 1920px;
+}
+
+.hd2 {
+  top: 5rem;
+  left: -1px;
+  width: 1920px;
+}
+
+.hd3 {
   top: 2rem;
   left: -1px;
   width: 1920px;
-} */
+}
+
+/* tab */
+@media (min-width: 768px) {
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  .hd1 {
+    top: -5rem;
+    left: -4px;
+    width: 1920px;
+  }
+
+  .hd2 {
+    top: -10rem;
+    left: -10px;
+    width: 1920px;
+  }
+
+  .hd3 {
+    top: 2rem;
+    left: -1px;
+    width: 1920px;
+  }
+}
+
+/* 1440 */
+@media (min-width: 1440px) {
+}
+
+/* 1800 */
+@media (min-width: 1800px) {
+}

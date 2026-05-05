@@ -1,5 +1,6 @@
 .hero-content {
   padding: 5rem 2rem;
+  z-index: 1;
 }
 
 /* left */
@@ -127,6 +128,8 @@
 /* right */
 .right {
   margin-top: 3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .currency-container {
@@ -186,10 +189,6 @@ select:focus {
   margin-top: 2rem;
   text-align: center;
   color: white;
-}
-
-/* tab */
-@media (min-width: 768px) {
 }
 
 /* 1024 */
@@ -254,10 +253,35 @@ select:focus {
   }
 }
 
-/* 1440 */
-@media (min-width: 1440px) {
+/* coins deco */
+
+.bit,
+.eth {
+  display: none;
+  position: absolute;
+  object-fit: contain;
 }
 
-/* 1800 */
-@media (min-width: 1800px) {
+/* tab */
+@media (min-width: 768px) {
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  .bit,
+  .eth {
+    display: block;
+    position: absolute;
+  }
+
+  .bit {
+    bottom: -50px;
+    left: -60px;
+    z-index: 2;
+  }
+  .eth {
+    top: -50px;
+    right: -70px;
+    z-index: 0;
+  }
 }

@@ -93,6 +93,103 @@
 
 /* 1024 */
 @media (min-width: 1280px) {
+  .products-section {
+    padding: 4rem 8rem;
+    background-color: var(--lb);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .products-box {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 18px;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .products-box h2 {
+    text-align: center;
+    font-size: 3.2rem;
+  }
+  .products-box p {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+  .products-box img {
+    margin-bottom: 2rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* products text  */
+
+  .products-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .portfolio {
+    background-color: var(--db);
+    color: var(--w);
+    animation: moveInLeft 6s;
+    width: 400px;
+    height: 500px;
+  }
+
+  .trading {
+    background-color: var(--y);
+    animation: moveInRight 6s;
+    flex-direction: row;
+    gap: 2rem;
+    width: 500px;
+    height: 300px;
+    padding: 1rem;
+  }
+
+  .trading img {
+    width: 200px;
+    margin-bottom: 0rem;
+    height: 200px;
+  }
+
+  .trading h2 {
+    color: var(--hc);
+  }
+
+  .security-day {
+    background-color: var(--p);
+    color: var(--w);
+    animation: moveUp 6s;
+    flex-direction: row;
+    gap: 2rem;
+    width: 500px;
+    height: 300px;
+    padding: 1rem;
+  }
+  .security-day img {
+    width: 200px;
+    margin-bottom: 0rem;
+    height: 200px;
+  }
+
+  .security-day p,
+  .trading p {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .security-day h2,
+  .trading h2 {
+    text-align: left;
+    font-size: 3.4rem;
+  }
 }
 
 /* 1440 */

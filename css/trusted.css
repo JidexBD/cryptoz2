@@ -106,3 +106,10 @@
     max-width: 60rem;
   }
 }
+
+/* 1800 */
+@media (min-width: 1800px) {
+  .trusted-left {
+    margin-left: 10rem;
+  }
+}
